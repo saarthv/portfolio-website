@@ -1,0 +1,20 @@
+export const siteConfig = {
+  name: "Saarth Vardhan",
+  tagline: "Data Scientist building decision systems across product, finance, and AI",
+  subheadline: "Columbia MSDS · Ex-Bain & Company",
+  description: "Personal portfolio focused on data science, AI systems, and product analytics.",
+  resumePath: "/documents/Saarth Vardhan - Resume.pdf",
+  email: "sv2850@columbia.edu",
+  phone: "+1 669 210 3462",
+  linkedin: "https://www.linkedin.com/in/saarth-vardhan",
+  github: "https://github.com/saarthv",
+  substack: "https://substack.com/@saarthv",
+  nav: [
+    { href: "/", label: "Home" },
+    { href: "/work", label: "Work" },
+    { href: "/about", label: "About" },
+    { href: "/blog", label: "Blog" },
+    { href: "/resume", label: "Resume" },
+    { href: "/contact", label: "Contact" },
+  ],
+};

@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a Next.js App Router portfolio scaffold using TypeScript, Tailwind CSS, and MDX blog support.
 
 ## Getting Started
 
@@ -14,23 +14,29 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Key directories:
 
-## Learn More
+- `src/app` - App Router routes (`/`, `/projects`, `/blog`, `/about`)
+- `src/content/blog` - MDX post source files
+- `src/lib` - Portfolio data and blog loaders
+- `public/images` - Existing image assets (preserved)
+- `public/documents` - Existing PDFs (preserved)
 
-To learn more about Next.js, take a look at the following resources:
+## Writing a new post
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create a new `.mdx` file in `src/content/blog` with frontmatter:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```md
+---
+title: "Post title"
+excerpt: "One-line summary"
+date: "YYYY-MM-DD"
+tags:
+  - tag1
+  - tag2
+---
+```

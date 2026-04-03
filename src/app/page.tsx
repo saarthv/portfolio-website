@@ -1,65 +1,83 @@
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+import { FeaturedProjectGrid } from "@/components/featured-project-grid";
+import { SectionHeading } from "@/components/section-heading";
+import { getFeaturedProjects } from "@/lib/projects";
+import { siteConfig } from "@/lib/site";
+
+export default function HomePage() {
+  const featured = getFeaturedProjects();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="space-y-14 sm:space-y-16">
+      <section className="fade-in rounded-3xl border border-white/10 bg-[#120a22]/80 p-7 sm:p-10">
+        <h1 className="font-serif text-5xl tracking-tight text-white sm:text-7xl">{siteConfig.name}</h1>
+        <p className="mt-4 max-w-2xl text-lg leading-8 text-zinc-200 sm:text-xl">{siteConfig.tagline}</p>
+        <div className="mt-7 flex flex-wrap gap-3">
+          <Link
+            href="/work"
+            className="rounded-full bg-violet-300 px-5 py-2.5 text-sm font-semibold text-black hover:bg-violet-200"
+          >
+            View Work
+          </Link>
+          <Link
+            href="/resume"
+            className="rounded-full border border-violet-300/40 bg-violet-500/10 px-5 py-2.5 text-sm font-medium text-violet-100 hover:bg-violet-500/20"
+          >
+            Resume
+          </Link>
+          <Link
+            href="/contact"
+            className="rounded-full border border-violet-300/40 bg-violet-500/10 px-5 py-2.5 text-sm font-medium text-violet-100 hover:bg-violet-500/20"
+          >
+            Contact
+          </Link>
+        </div>
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-2">
+        <article className="flex min-h-[220px] flex-col items-center justify-center rounded-2xl border border-white/10 bg-[#120d21]/90 p-6 text-center">
+          <Image
+            src="/images/logos/columbia.png"
+            alt="Columbia logo"
+            width={48}
+            height={48}
+            className="mb-3 h-11 w-auto object-contain opacity-85 [filter:brightness(1.08)]"
+          />
+          <h3 className="font-serif text-2xl tracking-tight text-zinc-100">Columbia University</h3>
+          <p className="mt-1.5 text-sm text-zinc-400/90">MS in Data Science</p>
+        </article>
+
+        <article className="flex min-h-[220px] flex-col items-center justify-center rounded-2xl border border-white/10 bg-[#120d21]/90 p-6 text-center">
+          <Image
+            src="/images/logos/bain.png"
+            alt="Bain logo"
+            width={48}
+            height={48}
+            className="mb-3 h-11 w-auto object-contain opacity-85 [filter:brightness(1.08)]"
+          />
+          <h3 className="font-serif text-2xl tracking-tight text-zinc-100">Bain &amp; Company</h3>
+          <p className="mt-1.5 text-sm text-zinc-400/90">Former Analyst Intern, Private Equity</p>
+        </article>
+      </section>
+
+      <section className="space-y-7">
+        <SectionHeading
+          eyebrow="Selected Work"
+          title="Featured project case studies"
+          description="Early Warning Risk Detection, Agentic Procurement System, Geospatial Intelligence Dashboard, and ETF Portfolio Analytics."
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+        <FeaturedProjectGrid projects={featured} />
+      </section>
+
+      <section className="rounded-2xl border border-white/10 bg-black/20 p-6">
+        <h2 className="font-serif text-2xl text-white">Writing</h2>
+        <p className="mt-2 text-zinc-300">I write about data, product, and decision systems.</p>
+        <Link href="/blog" className="mt-4 inline-block text-violet-200 underline underline-offset-4 hover:text-violet-100">
+          Browse posts
+        </Link>
+      </section>
     </div>
   );
 }
