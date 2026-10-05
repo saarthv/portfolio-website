@@ -36,7 +36,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-2">
+      <section className="grid gap-4 md:grid-cols-3">
+        <Link
+          href="/work/netapp-keystone"
+          className="group flex min-h-[220px] flex-col justify-between rounded-2xl border border-violet-300/20 bg-gradient-to-br from-[#1b1230] to-[#100b1f] p-6 hover:-translate-y-0.5 hover:border-violet-300/40"
+        >
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-violet-300">
+              Summer 2026
+            </p>
+            <h3 className="mt-3 font-serif text-2xl tracking-tight text-zinc-100">NetApp</h3>
+            <p className="mt-1.5 text-sm leading-6 text-zinc-300">Product Manager Intern · Keystone</p>
+          </div>
+          <span className="mt-6 text-sm font-medium text-violet-200 group-hover:text-violet-100">
+            Read the case study <span aria-hidden="true">→</span>
+          </span>
+        </Link>
+
         <article className="flex min-h-[220px] flex-col items-center justify-center rounded-2xl border border-white/10 bg-[#120d21]/90 p-6 text-center">
           <Image
             src="/images/logos/columbia.png"
@@ -66,7 +82,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Selected Work"
           title="Featured project case studies"
-          description="Early Warning Risk Detection, Agentic Procurement System, Geospatial Intelligence Dashboard, and ETF Portfolio Analytics."
+          description="Enterprise product management, AI systems, risk modeling, geospatial intelligence, and portfolio analytics."
         />
         <FeaturedProjectGrid projects={featured} />
       </section>

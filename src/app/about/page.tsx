@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function AboutPage() {
   return (
     <div className="space-y-10">
@@ -10,8 +12,9 @@ export default function AboutPage() {
             experimentation, and product thinking.
           </p>
           <p>
-            At Columbia MSDS and in prior operating roles, I have worked on risk analytics,
-            geospatial intelligence, agentic workflows, and market-facing dashboards.
+            At NetApp, Columbia MSDS, and in prior operating roles, I have worked on enterprise
+            infrastructure products, risk analytics, agentic workflows, and decision-focused
+            dashboards.
           </p>
         </div>
       </section>
@@ -26,6 +29,27 @@ export default function AboutPage() {
       </section>
 
       <section className="grid gap-6 md:grid-cols-2">
+        <article className="rounded-2xl border border-violet-300/20 bg-gradient-to-br from-[#1a102e] to-black/20 p-6 md:col-span-2">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-violet-300">
+            Summer 2026
+          </p>
+          <h3 className="mt-2 font-serif text-2xl text-white">NetApp</h3>
+          <p className="mt-1 text-violet-200">Product Manager Intern, Keystone</p>
+          <p className="mt-4 max-w-4xl leading-7 text-zinc-300">
+            Owned product work across subscription management, customer cost visibility, workflow
+            automation, infrastructure validation, and product policy for NetApp&apos;s enterprise
+            Storage-as-a-Service offering. Took ambiguous, cross-functional problems from discovery
+            and process mapping through requirements, working prototypes, validation, and executive
+            communication.
+          </p>
+          <Link
+            href="/work/netapp-keystone"
+            className="mt-5 inline-block text-sm font-medium text-violet-200 underline decoration-violet-400/50 underline-offset-4 hover:text-violet-100"
+          >
+            Read the NetApp case study
+          </Link>
+        </article>
+
         <article className="rounded-2xl border border-white/10 bg-black/20 p-6">
           <h3 className="font-serif text-2xl text-white">Bain &amp; Company</h3>
           <p className="mt-1 text-violet-200">Analyst Intern, Private Equity Group</p>

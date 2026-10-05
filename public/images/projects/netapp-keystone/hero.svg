@@ -1,0 +1,58 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0B0713"/>
+  <rect x="48" y="48" width="1504" height="804" rx="36" fill="url(#paint0_linear)" stroke="#6D4A91" stroke-opacity=".45"/>
+  <circle cx="1320" cy="128" r="300" fill="#7C3AED" fill-opacity=".12"/>
+  <circle cx="226" cy="778" r="330" fill="#C026D3" fill-opacity=".08"/>
+
+  <text x="112" y="156" fill="#C4B5FD" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5">NETAPP · KEYSTONE · SUMMER 2026</text>
+  <text x="112" y="253" fill="#FAF7FF" font-family="Georgia, serif" font-size="68">Enterprise complexity,</text>
+  <text x="112" y="331" fill="#FAF7FF" font-family="Georgia, serif" font-size="68">made executable.</text>
+  <text x="112" y="399" fill="#C7BDD5" font-family="Arial, sans-serif" font-size="25">From fragmented subscription decisions to a structured product system.</text>
+
+  <g transform="translate(112 488)">
+    <rect width="292" height="190" rx="24" fill="#171024" stroke="#A78BFA" stroke-opacity=".28"/>
+    <text x="28" y="56" fill="#AFA3BC" font-family="Arial, sans-serif" font-size="18">DISCOVER</text>
+    <text x="28" y="105" fill="#EDE9FE" font-family="Georgia, serif" font-size="34">15+ workflows</text>
+    <text x="28" y="145" fill="#AFA3BC" font-family="Arial, sans-serif" font-size="18">mapped into clear rules</text>
+  </g>
+
+  <path d="M424 583H478" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M466 570L480 583L466 596" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(498 488)">
+    <rect width="292" height="190" rx="24" fill="#171024" stroke="#A78BFA" stroke-opacity=".28"/>
+    <text x="28" y="56" fill="#AFA3BC" font-family="Arial, sans-serif" font-size="18">BUILD</text>
+    <text x="28" y="105" fill="#EDE9FE" font-family="Georgia, serif" font-size="34">Working prototype</text>
+    <text x="28" y="145" fill="#AFA3BC" font-family="Arial, sans-serif" font-size="18">product, not just a PRD</text>
+  </g>
+
+  <path d="M810 583H864" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M852 570L866 583L852 596" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(884 488)">
+    <rect width="292" height="190" rx="24" fill="#171024" stroke="#A78BFA" stroke-opacity=".28"/>
+    <text x="28" y="56" fill="#AFA3BC" font-family="Arial, sans-serif" font-size="18">VALIDATE</text>
+    <text x="28" y="105" fill="#EDE9FE" font-family="Georgia, serif" font-size="34">75 users</text>
+    <text x="28" y="145" fill="#AFA3BC" font-family="Arial, sans-serif" font-size="18">across business domains</text>
+  </g>
+
+  <path d="M1196 583H1250" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1238 570L1252 583L1238 596" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(1270 488)">
+    <rect width="218" height="190" rx="24" fill="#2A1742" stroke="#C4B5FD" stroke-opacity=".45"/>
+    <text x="28" y="56" fill="#C4B5FD" font-family="Arial, sans-serif" font-size="18">SCALE</text>
+    <text x="28" y="105" fill="#FAF7FF" font-family="Georgia, serif" font-size="31">Roadmap</text>
+    <text x="28" y="145" fill="#C7BDD5" font-family="Arial, sans-serif" font-size="18">toward production</text>
+  </g>
+
+  <text x="112" y="778" fill="#8F839E" font-family="Arial, sans-serif" font-size="18">PRODUCT DISCOVERY  ·  WORKFLOW DESIGN  ·  AUTOMATION  ·  ANALYTICS  ·  POLICY</text>
+
+  <defs>
+    <linearGradient id="paint0_linear" x1="48" y1="48" x2="1552" y2="852" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#170C2A"/>
+      <stop offset=".52" stop-color="#100A1D"/>
+      <stop offset="1" stop-color="#160C25"/>
+    </linearGradient>
+  </defs>
+</svg>

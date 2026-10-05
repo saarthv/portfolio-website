@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Saarth Vardhan",
-  tagline: "Data Scientist building decision systems across product, finance, and AI",
-  subheadline: "Columbia MSDS · Ex-Bain & Company",
-  description: "Personal portfolio focused on data science, AI systems, and product analytics.",
+  tagline: "Product manager and data scientist building decision systems across enterprise technology, finance, and AI",
+  subheadline: "NetApp Product · Columbia MSDS · Ex-Bain & Company",
+  description: "Product management and data science portfolio spanning enterprise technology, AI systems, and analytics.",
   resumePath: "/documents/Saarth Vardhan - Resume.pdf",
   email: "sv2850@columbia.edu",
   phone: "+1 669 210 3462",

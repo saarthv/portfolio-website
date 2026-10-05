@@ -9,6 +9,11 @@ export type ProjectSection = {
   bullets?: string[];
 };
 
+export type ProjectMetric = {
+  value: string;
+  label: string;
+};
+
 export type Project = {
   slug: string;
   title: string;
@@ -20,10 +25,89 @@ export type Project = {
   heroImage: string;
   supportingImages?: string[];
   links?: ProjectLink[];
+  eyebrow?: string;
+  metrics?: ProjectMetric[];
   sections: ProjectSection[];
 };
 
 export const projects: Project[] = [
+  {
+    slug: "netapp-keystone",
+    title: "NetApp Keystone",
+    subtitle: "Turning complex enterprise storage subscription workflows into clearer, scalable products",
+    summary:
+      "Owned product discovery, workflow design, prototyping, analytics, and policy work for NetApp's enterprise Storage-as-a-Service offering.",
+    tags: ["Product Management", "Enterprise Infrastructure", "Automation", "Analytics"],
+    featured: true,
+    tone: "product",
+    eyebrow: "NetApp · Product Manager Intern · Summer 2026",
+    heroImage: "/images/projects/netapp-keystone/hero.svg",
+    metrics: [
+      { value: "15+", label: "amendment types mapped" },
+      { value: "10+", label: "stakeholder groups aligned" },
+      { value: "75", label: "internal prototype users" },
+      { value: "$3M+", label: "potential exposure identified" },
+    ],
+    sections: [
+      {
+        title: "The product context",
+        paragraphs: [
+          "Keystone lets enterprise customers consume NetApp storage infrastructure through a subscription model. Changes after deployment—such as capacity, hardware, commercial terms, upgrades, relocations, and renewals—create dependencies across systems, policies, and teams.",
+          "My work focused on turning that complexity into products and workflows that were easier for customers and internal teams to understand, execute, and scale.",
+        ],
+      },
+      {
+        title: "Subscription Amendment Engine",
+        paragraphs: [
+          "I led the largest workstream from ambiguous process to product direction. I mapped and redesigned 15+ amendment types, many spanning 10+ steps, and aligned product, engineering, finance, legal, sales, customer success, support, logistics, asset management, and deal operations.",
+          "I translated discovery into a PRD, process specifications, business rules, future-state workflows, user stories, and engineering requirements. To test the experience concretely, I also built a working automation prototype that reached 75 internal users and presented the product direction to senior leadership.",
+        ],
+        bullets: [
+          "Made fragmented decisions legible as one structured product system",
+          "Combined PM discovery and requirements work with hands-on prototyping",
+          "Created a path from stakeholder validation toward engineering productionization",
+        ],
+      },
+      {
+        title: "Cost Explorer",
+        paragraphs: [
+          "I helped shape a customer-facing experience for understanding Keystone consumption and cost drivers—an enterprise-infrastructure analogue to cloud cost-management products.",
+          "Product telemetry showed that most customers returned multiple times within a billing period, indicating that cost visibility supported ongoing decisions rather than a single monthly billing interaction.",
+        ],
+      },
+      {
+        title: "Product risk and policy",
+        paragraphs: [
+          "Looking beyond the interface, I identified a loophole in subscription policy representing more than $3 million in potential exposure. I investigated the issue, wrote an executive remediation paper, and contributed to discussions about controls for subscription-capacity decrements.",
+          "The work reinforced that product judgment includes economics, incentives, contractual constraints, and operational risk—not only feature delivery.",
+        ],
+      },
+      {
+        title: "Infrastructure validation",
+        paragraphs: [
+          "I built a rightsizing validator that compared an enterprise customer's hardware configuration with its corresponding subscription quote. The tool helped reconcile two complex representations of the purchase and surface inconsistencies in infrastructure-sizing decisions.",
+        ],
+      },
+      {
+        title: "Customer discovery",
+        paragraphs: [
+          "Through enterprise customer and partner conversations, including discovery interviews and Executive Briefing Center interactions, I learned where internal product assumptions diverged from customer experiences of billing, cost transparency, subscription changes, and infrastructure management.",
+        ],
+      },
+      {
+        title: "What I took away",
+        paragraphs: [
+          "This internship covered the full path from an ambiguous enterprise problem to a proposed product, working prototype, stakeholder adoption, and production roadmap. It strengthened how I operate at the intersection of product, technical systems, analytics, and business operations.",
+        ],
+        bullets: [
+          "End-to-end ownership from discovery through validation and executive communication",
+          "Builder + PM approach: prototype enough of the product to test the idea",
+          "Data-informed decisions grounded in telemetry and user behavior",
+          "Cross-functional execution across business, customer, and engineering teams",
+        ],
+      },
+    ],
+  },
   {
     slug: "bedrock-agent",
     title: "Agentic Procurement System",
