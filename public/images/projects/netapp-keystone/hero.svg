@@ -4,7 +4,7 @@
   <circle cx="1320" cy="128" r="300" fill="#7C3AED" fill-opacity=".12"/>
   <circle cx="226" cy="778" r="330" fill="#C026D3" fill-opacity=".08"/>
 
-  <text x="112" y="156" fill="#C4B5FD" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5">NETAPP · KEYSTONE · SUMMER 2026</text>
+  <text x="112" y="156" fill="#C4B5FD" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5">NETAPP - KEYSTONE - SUMMER 2026</text>
   <text x="112" y="253" fill="#FAF7FF" font-family="Georgia, serif" font-size="68">Enterprise complexity,</text>
   <text x="112" y="331" fill="#FAF7FF" font-family="Georgia, serif" font-size="68">made executable.</text>
   <text x="112" y="399" fill="#C7BDD5" font-family="Arial, sans-serif" font-size="25">From fragmented subscription decisions to a structured product system.</text>
@@ -46,7 +46,7 @@
     <text x="28" y="145" fill="#C7BDD5" font-family="Arial, sans-serif" font-size="18">toward production</text>
   </g>
 
-  <text x="112" y="778" fill="#8F839E" font-family="Arial, sans-serif" font-size="18">PRODUCT DISCOVERY  ·  WORKFLOW DESIGN  ·  AUTOMATION  ·  ANALYTICS  ·  POLICY</text>
+  <text x="112" y="778" fill="#8F839E" font-family="Arial, sans-serif" font-size="18">PRODUCT DISCOVERY  /  WORKFLOW DESIGN  /  AUTOMATION  /  ANALYTICS  /  POLICY</text>
 
   <defs>
     <linearGradient id="paint0_linear" x1="48" y1="48" x2="1552" y2="852" gradientUnits="userSpaceOnUse">

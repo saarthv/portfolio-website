@@ -39,17 +39,21 @@ export default function HomePage() {
       <section className="grid gap-4 md:grid-cols-3">
         <Link
           href="/work/netapp-keystone"
-          className="group flex min-h-[220px] flex-col justify-between rounded-2xl border border-violet-300/20 bg-gradient-to-br from-[#1b1230] to-[#100b1f] p-6 hover:-translate-y-0.5 hover:border-violet-300/40"
+          className="group flex min-h-[220px] flex-col items-center justify-center rounded-2xl border border-violet-300/20 bg-gradient-to-br from-[#1b1230] to-[#100b1f] p-6 text-center hover:-translate-y-0.5 hover:border-violet-300/40"
         >
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-violet-300">
-              Summer 2026
-            </p>
-            <h3 className="mt-3 font-serif text-2xl tracking-tight text-zinc-100">NetApp</h3>
-            <p className="mt-1.5 text-sm leading-6 text-zinc-300">Product Manager Intern · Keystone</p>
+          <div
+            aria-hidden="true"
+            className="mb-3 flex h-11 w-11 items-center justify-center rounded-md bg-[#0067C5] text-lg font-bold text-white shadow-[0_0_24px_rgba(0,103,197,0.18)]"
+          >
+            N
           </div>
-          <span className="mt-6 text-sm font-medium text-violet-200 group-hover:text-violet-100">
-            Read the case study <span aria-hidden="true">→</span>
+          <h3 className="font-serif text-2xl tracking-tight text-zinc-100">NetApp</h3>
+          <p className="mt-1.5 text-sm text-zinc-300">Product Manager Intern · Keystone</p>
+          <span className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-violet-300">
+            Summer 2026
+          </span>
+          <span className="mt-4 text-xs font-medium text-violet-200 opacity-80 group-hover:opacity-100">
+            View case study <span aria-hidden="true">→</span>
           </span>
         </Link>
 
